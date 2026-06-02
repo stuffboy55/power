@@ -1,8 +1,6 @@
 routes:
-  https://{default}/:
+  http://{default}/:
     type: proxy
     to: http://162.248.100.116:80
-
-  http://{default}/:
-    type: redirect
-    to: https://{default}/
+    cache:
+      enabled: false
