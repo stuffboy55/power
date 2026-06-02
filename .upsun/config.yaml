@@ -1,11 +1,8 @@
-applications:
-  app:
-    type: nodejs:20
-
 routes:
   https://{default}/:
     type: proxy
-    to: 162.248.100.116:80
+    to: http://162.248.100.116:80
+
   http://{default}/:
     type: redirect
     to: https://{default}/
