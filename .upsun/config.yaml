@@ -2,5 +2,3 @@ routes:
   http://{default}/:
     type: proxy
     to: http://162.248.100.116:80
-    cache:
-      enabled: false
